@@ -9,3 +9,107 @@
 
    We'll write styles here starting Monday.
    ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --background: #171326;
+    --text: #FFF4E0;
+    --accent: #FF4F87;
+    --link: #FFE66D;
+    --purple: #B69CFF;
+    --panel: #29213D;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+    padding: 28px;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px var(--purple);
+    transform: rotate(-1deg);
+}
+
+h2 {
+    color: var(--link);
+    border-bottom: 3px dashed var(--purple);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: var(--purple);
+}
+
+p {
+    max-width: 75ch;
+}
+
+a {
+    color: var(--link);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    background-color: var(--accent);
+    color: var(--background);
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-decoration: underline;
+}
+
+ul, ol {
+    line-height:2;
+}
+
+hr {
+    border: 0;
+    border-top: 3px dashed var(--purple);
+    margin: 28px 0;
+}
+
+code, pre {
+    background-color: var(--panel);
+    color: var(--link);
+    font-family: 'Space Mono', monospace;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+blockquote {
+    background-color: var(--panel);
+    border-left: 6px solid var(--accent);
+    margin: 20px 0;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+th {
+    background-color: var(--purple);
+    color: var(--background);
+}
+
+th, td {
+    border: 1px solid var(--purple);
+    color: var(--background);
+}
+
